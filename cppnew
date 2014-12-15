@@ -1,0 +1,6 @@
+#!/bin/bash
+mkdir $1
+cd $1
+mkdir src bin headers
+printf "int main(int argc, char *argv[])\n{\n\treturn 0;\n}" >> src/main.cpp
+touch Makefile
