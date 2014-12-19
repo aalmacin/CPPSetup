@@ -6,15 +6,17 @@ printf "int main(int argc, char *argv[])\n{\n\treturn 0;\n}" >> src/main.cpp
 printf '
 CC=g++-4.9
 CFLAGS=-c
-SRC=src/*
+SRC=src/*.cpp
 HEADERS=headers/*
 EXECUTABLE=bin/main
 
 all: compile clean
 
 compile:
-	$(CC) $(SRC).cpp -o $(EXECUTABLE)
+	$(CC) $(SRC) -o $(EXECUTABLE)
 
 clean:
 	rm -rf *.o
 ' >> Makefile
+
+ln -sf headers src/headers
