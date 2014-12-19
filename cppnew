@@ -2,9 +2,10 @@
 mkdir $1
 cd $1
 mkdir src bin headers
-printf "int main(int argc, char *argv[])\n{\n\treturn 0;\n}" >> src/main.cpp
-printf '
-CC=g++-4.9
+echo "Created directories: src, bin, headers"
+printf "#include <iostream>\n\nusing namespace std;\nint main(int argc, char *argv[])\n{\n\tcout << \"Hello World!\" << endl;\n\treturn 0;\n}" >> src/main.cpp
+echo "Created main function"
+printf 'CC=g++-4.9
 CFLAGS=-c
 SRC=src/*.cpp
 HEADERS=headers/*
@@ -18,5 +19,7 @@ compile:
 clean:
 	rm -rf *.o
 ' >> Makefile
-
-ln -sf headers src/headers
+echo "Created make file"
+ln -sf "$(pwd)/headers" "$(pwd)/src/headers"
+echo "Made link to headers"
+echo "Created project at $(pwd)"
