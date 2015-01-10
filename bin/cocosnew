@@ -1,0 +1,16 @@
+#!/bin/sh
+PROJECT_NAME="$1"
+RESEARCH_PATH="/Users/AJAlmacin/Documents/Research/Programming/C++/Cocos"
+PROJECT_PATH="/Users/AJAlmacin/Documents/Projects/Programming/C++/Cocos"
+
+if [[ $1 == "" ]]; then
+  echo "You need to add a project name."
+  exit
+fi
+
+if [[ $2 == '-p' || $2 == '--p' ]]; then
+  THE_PATH="$PROJECT_PATH"
+else
+  THE_PATH="$RESEARCH_PATH"
+fi
+cocos new $PROJECT_NAME -p ca.almacin.$PROJECT_NAME -l cpp -d $THE_PATH

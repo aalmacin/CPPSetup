@@ -1,0 +1,14 @@
+set -o vi
+alias g++="g++-4.9"
+
+PATH="~/.composer/vendor/bin:~/Documents/Research/Programming/BASH/bin":$PATH
+export PATH
+
+##
+# Your previous /Users/AJAlmacin/.bash_profile file was backed up as /Users/AJAlmacin/.bash_profile.macports-saved_2014-12-05_at_03:28:06
+##
+
+# MacPorts Installer addition on 2014-12-05_at_03:28:06: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+

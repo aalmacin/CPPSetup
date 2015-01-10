@@ -1,0 +1,5 @@
+set -o vi
+alias g++="g++-4.9"
+
+PATH="~/.composer/vendor/bin:~/Documents/Research/Programming/BASH/bin":$PATH
+export PATH
