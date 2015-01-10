@@ -1,5 +1,8 @@
 set -o vi
-PATH=$PATH:"~/.composer/vendor/bin:~/Documents/Tools/bin"
+#Change this path if necessary
+TOOLS_PATH="/Users/AJAlmacin/Documents/Tools"
+export TOOLS_PATH
+PATH=$PATH:"~/.composer/vendor/bin:$TOOLS_PATH/bin"
 export PATH
 
 ##
