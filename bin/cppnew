@@ -27,7 +27,7 @@ clean:
 ' >> Makefile
 echo "Created make file"
 ln -sf "$(pwd)/headers" "$(pwd)/src/headers"
-echo "ln -sf $(echo $TOOLS_PATH)/AJ_CPP_Library $(pwd)/src/AJ_CPP_Library"
-ln -sf "$(echo $TOOLS_PATH)/AJ_CPP_Library" "$(pwd)/src/AJ_CPP_Library"
+echo "ln -sf $(echo $TOOLS_PATH)/AJ_CPP_Library $(pwd)/src/ajcpp"
+ln -sf "$(echo $TOOLS_PATH)/AJ_CPP_Library" "$(pwd)/src/ajcpp"
 echo "Made link to headers"
 echo "Created project at $(pwd)"

@@ -1,0 +1,9 @@
+#!/bin/bash
+NAME="$@"
+NAME=${NAME/' '/_}
+NAMEUPPER=$(echo $NAME | awk '{print toupper($0)}')
+if [[ $NAME != "" ]];then
+  printf "#include <iostream>\n\nusing namespace std;\n#ifndef "$NAMEUPPER"_H_INCLUDED\n#define "$NAMEUPPER"_H_INCLUDED\n#endif" >> src/"$NAME".cpp
+else
+  echo "Need to add a name"
+fi

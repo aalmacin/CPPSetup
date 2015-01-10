@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/AJAlmacin/Documents/Tools/AJ_CPP_Library'
 let g:netrw_dirhist_2='/Users/AJAlmacin/Documents/Research/Programming/C++/Test_Projects/My_Code/TestBash/asdfjdaskdfjlas'
 let g:netrw_dirhist_3='/Users/AJAlmacin/Documents/Research/Programming/C++/Test_Projects/My_Code/TestBash/asdfjdaskdfjlas/src/AJ_CPP_Library'
+let g:netrw_dirhist_4='/Users/AJAlmacin/Documents/Research/Programming/C++/Test_Projects/My_Code/TestBash/asdfjdaskdfjlas/headers/headers'
