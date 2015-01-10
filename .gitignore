@@ -1,3 +1,4 @@
+*.sw?
 .DS_Store
 AndroidDev
 cocos2d-x-3.2
