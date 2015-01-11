@@ -10,8 +10,8 @@ namespace conv
 
   int StringToNumber(string MyString)
   {
-    istringstream converter(MyString);
-    int result;
+    istringstream converter(MyString); // Holds the string.
+    int result;                        // Holds the integer result.
 
     converter >> result;
     return result;
